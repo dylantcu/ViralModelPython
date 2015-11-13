@@ -26,6 +26,12 @@ ni = 60     #
 probi = .5  # Threshold for probablility of cell to cell infection
 nmean = 0.5 # Mean of probability of cell to cell infection
 
+#############
+
+rho = 224
+beta = 3e-06
+c = 0.056
+deltx = 50e-09
 
 def indx(condition, axis):                  # Translate array index to int index           
     if axis == 'yaxis':
@@ -78,6 +84,27 @@ ecl = numpy.zeros((Ny,Nx))
 inf = numpy.zeros((Ny,Nx))
 th = numpy.zeros((Ny,Nx))
 ut = numpy.zeros((Ny,Nx))
+
+############################################################
+#   Straight up not sure what I'm doing here
+#   here's to hoping it works!
+#                                       _______
+#                              ________/_____
+#                              \     /     |
+#                               \~~~~~~~~~|
+#                                \  `    |
+#                                 \    `|  
+#                                  \ ` |
+#                                   \ |
+#                                    T   
+#                                  -----   
+############################################################
+for j in cells == 'i':
+    Itn = 1
+    Vtn = 1
+
+Vt1n = rho*()
+
 
 ################################################################
 #   Infects a random cell, now seen as (i)                     #
